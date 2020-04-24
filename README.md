@@ -1,4 +1,4 @@
-# Log-o-Base
+## Log-o-Base
 MST: CS2300 Project - Create a receipt database\n
 ********	Run on Visual Studio 15 C#					********\n
 ********	Database is Mocrosoft SQL Server Management Studio v.18		********\n
