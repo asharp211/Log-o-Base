@@ -1,7 +1,7 @@
 # Log-o-Base
-MST: CS2300 Project - Create a receipt database
-********	Run on Visual Studio 15 C#					********
-********	Database is Mocrosoft SQL Server Management Studio v.18		********
+MST: CS2300 Project - Create a receipt database\n
+********	Run on Visual Studio 15 C#					********\n
+********	Database is Mocrosoft SQL Server Management Studio v.18		********\n
 
 This is a Receipt database where we collect the invoices.
 The goal is to collect data on the user and have them insert an invoice or receipt into the database.
