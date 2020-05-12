@@ -9,9 +9,10 @@ E:\Share_Files\Log-o-Base\Log-o-Base\obj\Debug\Log-o-Base.pdb
 E:\Share_Files\Log-o-Base\Log-o-Base\obj\Debug\Log_o_Base.LoginScreen.resources
 E:\Share_Files\Log-o-Base\Log-o-Base\obj\Debug\Log_o_Base.homeScreen.resources
 E:\Share_Files\Log-o-Base\Log-o-Base\obj\Debug\Log_o_Base.registerScreen.resources
-E:\Share_Files\Log-o-Base\Log-o-Base\obj\Debug\Log_o_Base.ActUsScreen.resources
 E:\Share_Files\Log-o-Base\Log-o-Base\obj\Debug\Log_o_Base.Main.resources
 E:\Share_Files\Log-o-Base\Log-o-Base\obj\Debug\Log_o_Base.recordReceipt.resources
 E:\Share_Files\Log-o-Base\Log-o-Base\obj\Debug\Log_o_Base.aboutScreen.resources
 E:\Share_Files\Log-o-Base\Log-o-Base\obj\Debug\Log-o-Base.csprojResolveAssemblyReference.cache
-E:\Share_Files\Log-o-Base\Log-o-Base\obj\Debug\Log_o_Base.receiptMake.resources
+E:\Share_Files\Log-o-Base\Log-o-Base\obj\Debug\Log_o_Base.ViewData.resources
+E:\Share_Files\Log-o-Base\Log-o-Base\obj\Debug\Log_o_Base.AddReceipt.resources
+E:\Share_Files\Log-o-Base\Log-o-Base\obj\Debug\Log_o_Base.ActiverUser.resources

@@ -1,0 +1,23 @@
+USE [LogBase]
+GO
+
+INSERT INTO [dbo].[tbReceipt]
+           ([Transaction]
+           ,[Date]
+           ,[ItemNumber]
+           ,[Item_Name]
+           ,[Price]
+           ,[Quantity]
+           ,[MethodOfPay]
+           ,[Total])
+     VALUES
+           (<Transaction, varchar(50),>
+           ,<Date, date,>
+           ,<ItemNumber, varchar(50),>
+           ,<Item_Name, varchar(50),>
+           ,<Price, money,>
+           ,<Quantity, int,>
+           ,<MethodOfPay, nchar(10),>
+           ,<Total, money,>)
+GO
+

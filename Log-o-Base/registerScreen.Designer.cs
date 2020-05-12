@@ -33,17 +33,14 @@
             this.txtLastName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtFirstName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtNewPassword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtEmail = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtCity = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.charPhoneNumber = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.charZipCode = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.createBttn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.mName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.CloseBttn = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
@@ -59,12 +56,12 @@
             this.txtAccount.LineIdleColor = System.Drawing.Color.Gray;
             this.txtAccount.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtAccount.LineThickness = 3;
-            this.txtAccount.Location = new System.Drawing.Point(822, 201);
+            this.txtAccount.Location = new System.Drawing.Point(822, 253);
             this.txtAccount.Margin = new System.Windows.Forms.Padding(4);
             this.txtAccount.Name = "txtAccount";
             this.txtAccount.Size = new System.Drawing.Size(234, 44);
-            this.txtAccount.TabIndex = 0;
-            this.txtAccount.Text = "Account ID";
+            this.txtAccount.TabIndex = 7;
+            this.txtAccount.Text = "Account ID / Email";
             this.txtAccount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtAccount.OnValueChanged += new System.EventHandler(this.txtAccount_OnValueChanged);
             this.txtAccount.Enter += new System.EventHandler(this.txtAccIDEnter);
@@ -86,7 +83,7 @@
             this.txtAddress.Margin = new System.Windows.Forms.Padding(4);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(234, 44);
-            this.txtAddress.TabIndex = 1;
+            this.txtAddress.TabIndex = 3;
             this.txtAddress.Text = "Address";
             this.txtAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtAddress.OnValueChanged += new System.EventHandler(this.txtStreet_OnValueChanged);
@@ -128,11 +125,11 @@
             this.txtFirstName.LineIdleColor = System.Drawing.Color.Gray;
             this.txtFirstName.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtFirstName.LineThickness = 3;
-            this.txtFirstName.Location = new System.Drawing.Point(91, 133);
+            this.txtFirstName.Location = new System.Drawing.Point(92, 185);
             this.txtFirstName.Margin = new System.Windows.Forms.Padding(4);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(234, 44);
-            this.txtFirstName.TabIndex = 3;
+            this.txtFirstName.TabIndex = 1;
             this.txtFirstName.Text = "First Name";
             this.txtFirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtFirstName.OnValueChanged += new System.EventHandler(this.txtFirstName_OnValueChanged);
@@ -155,35 +152,12 @@
             this.txtNewPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtNewPassword.Name = "txtNewPassword";
             this.txtNewPassword.Size = new System.Drawing.Size(234, 44);
-            this.txtNewPassword.TabIndex = 4;
+            this.txtNewPassword.TabIndex = 8;
             this.txtNewPassword.Text = "Password";
             this.txtNewPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtNewPassword.OnValueChanged += new System.EventHandler(this.txtNewPassword_OnValueChanged);
             this.txtNewPassword.Enter += new System.EventHandler(this.txtPassword1Enter);
             this.txtNewPassword.Leave += new System.EventHandler(this.txtPassword1Leave);
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtEmail.HintForeColor = System.Drawing.Color.Empty;
-            this.txtEmail.HintText = "";
-            this.txtEmail.isPassword = false;
-            this.txtEmail.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtEmail.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtEmail.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtEmail.LineThickness = 3;
-            this.txtEmail.Location = new System.Drawing.Point(822, 253);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(234, 44);
-            this.txtEmail.TabIndex = 5;
-            this.txtEmail.Text = "Email";
-            this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtEmail.OnValueChanged += new System.EventHandler(this.txtEmail_OnValueChanged);
-            this.txtEmail.Enter += new System.EventHandler(this.txtEmailEnter);
-            this.txtEmail.Leave += new System.EventHandler(this.txtEmailLeave);
             // 
             // txtCity
             // 
@@ -201,7 +175,7 @@
             this.txtCity.Margin = new System.Windows.Forms.Padding(4);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(234, 44);
-            this.txtCity.TabIndex = 6;
+            this.txtCity.TabIndex = 4;
             this.txtCity.Text = "City";
             this.txtCity.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtCity.OnValueChanged += new System.EventHandler(this.txtCity_OnValueChanged);
@@ -224,7 +198,7 @@
             this.charPhoneNumber.Margin = new System.Windows.Forms.Padding(4);
             this.charPhoneNumber.Name = "charPhoneNumber";
             this.charPhoneNumber.Size = new System.Drawing.Size(234, 44);
-            this.charPhoneNumber.TabIndex = 7;
+            this.charPhoneNumber.TabIndex = 6;
             this.charPhoneNumber.Text = "Phone #";
             this.charPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.charPhoneNumber.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox8_OnValueChanged);
@@ -247,7 +221,7 @@
             this.charZipCode.Margin = new System.Windows.Forms.Padding(4);
             this.charZipCode.Name = "charZipCode";
             this.charZipCode.Size = new System.Drawing.Size(234, 44);
-            this.charZipCode.TabIndex = 8;
+            this.charZipCode.TabIndex = 5;
             this.charZipCode.Text = "Zip Code";
             this.charZipCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.charZipCode.OnValueChanged += new System.EventHandler(this.charZipCode_OnValueChanged);
@@ -272,46 +246,27 @@
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(52, 41);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(323, 19);
             this.textBox1.TabIndex = 10;
             this.textBox1.Text = "Let\'s log in your data!";
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.Color.White;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(52, 73);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(429, 19);
             this.textBox2.TabIndex = 11;
-            this.textBox2.Text = "Enter the basic in the basic information to register.";
-            // 
-            // mName
-            // 
-            this.mName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.mName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.mName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.mName.HintForeColor = System.Drawing.Color.Empty;
-            this.mName.HintText = "";
-            this.mName.isPassword = false;
-            this.mName.LineFocusedColor = System.Drawing.Color.Blue;
-            this.mName.LineIdleColor = System.Drawing.Color.Gray;
-            this.mName.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.mName.LineThickness = 3;
-            this.mName.Location = new System.Drawing.Point(91, 185);
-            this.mName.Margin = new System.Windows.Forms.Padding(4);
-            this.mName.Name = "mName";
-            this.mName.Size = new System.Drawing.Size(234, 44);
-            this.mName.TabIndex = 12;
-            this.mName.Text = "M.I. (Optional)";
-            this.mName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.mName.OnValueChanged += new System.EventHandler(this.mName_OnValueChanged);
-            this.mName.Enter += new System.EventHandler(this.txtMIEnter);
-            this.mName.Leave += new System.EventHandler(this.txtMILeave);
+            this.textBox2.Text = "Enter in the basic information to register.";
             // 
             // CloseBttn
             // 
@@ -324,7 +279,7 @@
             this.CloseBttn.Location = new System.Drawing.Point(960, 374);
             this.CloseBttn.Name = "CloseBttn";
             this.CloseBttn.Size = new System.Drawing.Size(96, 33);
-            this.CloseBttn.TabIndex = 13;
+            this.CloseBttn.TabIndex = 10;
             this.CloseBttn.Text = "Close";
             this.CloseBttn.UseVisualStyleBackColor = false;
             this.CloseBttn.Click += new System.EventHandler(this.CloseBttn_Click);
@@ -334,24 +289,12 @@
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.ForeColor = System.Drawing.Color.Red;
-            this.richTextBox1.Location = new System.Drawing.Point(797, 226);
+            this.richTextBox1.Location = new System.Drawing.Point(797, 278);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.richTextBox1.Size = new System.Drawing.Size(18, 19);
             this.richTextBox1.TabIndex = 14;
             this.richTextBox1.Text = "*";
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox2.ForeColor = System.Drawing.Color.Red;
-            this.richTextBox2.Location = new System.Drawing.Point(797, 270);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox2.Size = new System.Drawing.Size(18, 19);
-            this.richTextBox2.TabIndex = 15;
-            this.richTextBox2.Text = "*";
             // 
             // richTextBox3
             // 
@@ -371,17 +314,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.richTextBox3);
-            this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.CloseBttn);
-            this.Controls.Add(this.mName);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.createBttn);
             this.Controls.Add(this.charZipCode);
             this.Controls.Add(this.charPhoneNumber);
             this.Controls.Add(this.txtCity);
-            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtNewPassword);
             this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.txtLastName);
@@ -401,17 +341,14 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtLastName;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtFirstName;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtNewPassword;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtEmail;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtCity;
         private Bunifu.Framework.UI.BunifuMaterialTextbox charPhoneNumber;
         private Bunifu.Framework.UI.BunifuMaterialTextbox charZipCode;
         private System.Windows.Forms.Button createBttn;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox mName;
         private System.Windows.Forms.Button CloseBttn;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.RichTextBox richTextBox3;
     }
 }

@@ -1,0 +1,58 @@
+CREATE TABLE Customer
+( 
+	City varchar(60) NOT NULL,
+	Fname varchar(60) NOT NULL,
+	Lname varchar(60) NOT NULL,
+	Phone_Number varchar(50),
+	R_Number integer,
+	Customer_ID integer,
+	PRIMARY KEY(Customer_ID)
+);
+
+CREATE TABLE Receipt
+( 
+	Cash_Flag char(1) DEFAULT 'f',
+	Cash integer CHECK (Cash >=0),
+	Card_Flag char(1) DEFAULT 'f',
+	Transaction_Number integer,
+	"DATE" date,	
+	CHECK (Cash_Flag = 'f' OR Cash_Flag = 't'),
+	CHECK (Card_Flag = 'f' OR Card_Flag = 't'),	
+	PRIMARY KEY(Transaction_Number) 
+);
+
+CREATE TABLE Store 
+(
+	S_Name varchar(80),
+	Street varchar(80),
+	City varchar(80),
+	Phone_Num integer UNIQUE NOT NULL,
+	Item_Code integer,
+	Trans_Number integer,
+	PRIMARY KEY(S_name, Item_Code)	
+);
+
+CREATE TABLE Item
+(
+	Item_Number integer,
+	Price integer CHECK (Price>=0) NOT NULL,
+	Quantity integer CHECK (Quantity>=0) NOT NULL,
+	Name varchar(80) NOT NULL,
+	Category varchar(30) NOT NULL,
+	PRIMARY KEY(Item_Number)
+);
+
+
+/* Needs trigger for foreign key if using Oracle*/
+ALTER TABLE CUSTOMER 
+ADD FOREIGN KEY (R_Number) REFERENCES Receipt(Transaction_Number) /* ON UPDATE CASCADE*/;
+
+/* Needs trigger added if using Oracle */
+ALTER TABLE Store 
+ADD FOREIGN KEY (Trans_Number) REFERENCES Receipt (Transaction_Number) /* ON UPDATE CASCADE*/;
+
+/* Customer profile created as a view instead of a table so it can update automatically */
+CREATE VIEW Customer_Profile AS
+SELECT Customer_ID, Transaction_Number, Province, Item_Code
+FROM Customer Cust, Receipt Rec, Store
+WHERE Cust.R_number = Rec.Transaction_Number AND Rec.Transaction_Number = Store.Trans_Number;

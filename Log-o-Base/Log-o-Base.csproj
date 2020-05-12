@@ -57,17 +57,69 @@
     <Compile Include="aboutScreen.Designer.cs">
       <DependentUpon>aboutScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="ActUsScreen.cs">
+    <Compile Include="ActiverUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ActUsScreen.Designer.cs">
-      <DependentUpon>ActUsScreen.cs</DependentUpon>
+    <Compile Include="ActiverUser.Designer.cs">
+      <DependentUpon>ActiverUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addReceipt.Designer.cs">
+      <DependentUpon>addReceipt.cs</DependentUpon>
     </Compile>
     <Compile Include="Component1.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Component1.Designer.cs">
       <DependentUpon>Component1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogBaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogBaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LogBaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogBaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LogBaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogBaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LogBaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogBaseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LogBaseDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogBaseDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LogBaseDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogBaseDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LogBaseDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogBaseDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LogBaseDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogBaseDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoginScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoginScreen.Designer.cs">
+      <DependentUpon>LoginScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -81,20 +133,9 @@
     <Compile Include="homeScreen.Designer.cs">
       <DependentUpon>homeScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginScreen.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="LoginScreen.Designer.cs">
-      <DependentUpon>LoginScreen.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="receiptMake.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="receiptMake.Designer.cs">
-      <DependentUpon>receiptMake.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Receipt.cs" />
     <Compile Include="recordReceipt.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -113,20 +154,29 @@
     <Compile Include="searchScreen.Designer.cs">
       <DependentUpon>searchScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewData.Designer.cs">
+      <DependentUpon>ViewData.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="aboutScreen.resx">
       <DependentUpon>aboutScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ActUsScreen.resx">
-      <DependentUpon>ActUsScreen.cs</DependentUpon>
+    <EmbeddedResource Include="ActiverUser.resx">
+      <DependentUpon>ActiverUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addReceipt.resx">
+      <DependentUpon>addReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginScreen.resx">
+      <DependentUpon>LoginScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="homeScreen.resx">
       <DependentUpon>homeScreen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LoginScreen.resx">
-      <DependentUpon>LoginScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -138,15 +188,103 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="receiptMake.resx">
-      <DependentUpon>receiptMake.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="recordReceipt.resx">
       <DependentUpon>recordReceipt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="registerScreen.resx">
       <DependentUpon>registerScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewData.resx">
+      <DependentUpon>ViewData.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="LogBaseDataSet.xsc">
+      <DependentUpon>LogBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LogBaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LogBaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LogBaseDataSet.xss">
+      <DependentUpon>LogBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LogBaseDataSet1.xsc">
+      <DependentUpon>LogBaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LogBaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LogBaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LogBaseDataSet1.xss">
+      <DependentUpon>LogBaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LogBaseDataSet2.xsc">
+      <DependentUpon>LogBaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="LogBaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LogBaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LogBaseDataSet2.xss">
+      <DependentUpon>LogBaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="LogBaseDataSet3.xsc">
+      <DependentUpon>LogBaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="LogBaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LogBaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LogBaseDataSet3.xss">
+      <DependentUpon>LogBaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="LogBaseDataSet4.xsc">
+      <DependentUpon>LogBaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="LogBaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LogBaseDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LogBaseDataSet4.xss">
+      <DependentUpon>LogBaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="LogBaseDataSet5.xsc">
+      <DependentUpon>LogBaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="LogBaseDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LogBaseDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LogBaseDataSet5.xss">
+      <DependentUpon>LogBaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="LogBaseDataSet6.xsc">
+      <DependentUpon>LogBaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="LogBaseDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LogBaseDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LogBaseDataSet6.xss">
+      <DependentUpon>LogBaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="LogBaseDataSet7.xsc">
+      <DependentUpon>LogBaseDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="LogBaseDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LogBaseDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LogBaseDataSet7.xss">
+      <DependentUpon>LogBaseDataSet7.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

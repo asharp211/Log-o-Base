@@ -1,0 +1,28 @@
+USE [LogBase]
+GO
+
+/****** Object:  Table [dbo].[tbUser]    Script Date: 5/3/2020 8:06:00 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[tbUser](
+	[UserID] [int] IDENTITY(1,1) NOT NULL,
+	[FirstName] [varchar](50) NULL,
+	[LastName] [varchar](50) NULL,
+	[Address] [varchar](50) NULL,
+	[City] [varchar](50) NULL,
+	[ZipCode] [varchar](50) NULL,
+	[PhoneNumber] [varchar](50) NULL,
+	[Username] [varchar](50) NULL,
+	[Password] [varchar](50) NULL,
+ CONSTRAINT [PK_tbUser] PRIMARY KEY CLUSTERED 
+(
+	[UserID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+

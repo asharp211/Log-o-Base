@@ -31,24 +31,25 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.AboutButton = new System.Windows.Forms.Button();
-            this.SearchButton = new System.Windows.Forms.Button();
             this.HomeButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.ActiveUser = new System.Windows.Forms.Button();
-            this.aboutScreen1 = new Log_o_Base.aboutScreen();
             this.registerScreen1 = new Log_o_Base.registerScreen();
             this.loginScreen1 = new Log_o_Base.LoginScreen();
+            this.viewData1 = new Log_o_Base.ViewData();
+            this.aboutScreen1 = new Log_o_Base.aboutScreen();
+            this.activerUser1 = new Log_o_Base.ActiverUser();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.ForestGreen;
+            this.panel1.BackColor = System.Drawing.Color.Khaki;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -71,8 +72,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Khaki;
+            this.panel2.Controls.Add(this.btnSearch);
             this.panel2.Controls.Add(this.AboutButton);
-            this.panel2.Controls.Add(this.SearchButton);
             this.panel2.Controls.Add(this.HomeButton);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 55);
@@ -80,52 +81,55 @@
             this.panel2.Size = new System.Drawing.Size(1109, 75);
             this.panel2.TabIndex = 1;
             // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Location = new System.Drawing.Point(378, 0);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(346, 75);
+            this.btnSearch.TabIndex = 3;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.Record_Click);
+            // 
             // AboutButton
             // 
-            this.AboutButton.BackColor = System.Drawing.Color.ForestGreen;
+            this.AboutButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.AboutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.AboutButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AboutButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.AboutButton.FlatAppearance.BorderSize = 0;
             this.AboutButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.AboutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AboutButton.ForeColor = System.Drawing.Color.White;
-            this.AboutButton.Location = new System.Drawing.Point(867, 14);
+            this.AboutButton.Location = new System.Drawing.Point(724, 0);
             this.AboutButton.Name = "AboutButton";
-            this.AboutButton.Size = new System.Drawing.Size(126, 46);
+            this.AboutButton.Size = new System.Drawing.Size(385, 75);
             this.AboutButton.TabIndex = 2;
             this.AboutButton.Text = "About";
             this.AboutButton.UseVisualStyleBackColor = false;
             this.AboutButton.Click += new System.EventHandler(this.AboutButton_Click);
             // 
-            // SearchButton
-            // 
-            this.SearchButton.BackColor = System.Drawing.Color.ForestGreen;
-            this.SearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.SearchButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SearchButton.FlatAppearance.BorderSize = 0;
-            this.SearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SearchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchButton.ForeColor = System.Drawing.Color.White;
-            this.SearchButton.Location = new System.Drawing.Point(477, 14);
-            this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(126, 46);
-            this.SearchButton.TabIndex = 1;
-            this.SearchButton.Text = "Search";
-            this.SearchButton.UseVisualStyleBackColor = false;
-            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
-            // 
             // HomeButton
             // 
-            this.HomeButton.BackColor = System.Drawing.Color.ForestGreen;
+            this.HomeButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.HomeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.HomeButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.HomeButton.Dock = System.Windows.Forms.DockStyle.Left;
             this.HomeButton.FlatAppearance.BorderSize = 0;
             this.HomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.HomeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomeButton.ForeColor = System.Drawing.Color.White;
-            this.HomeButton.Location = new System.Drawing.Point(87, 15);
+            this.HomeButton.Location = new System.Drawing.Point(0, 0);
             this.HomeButton.Name = "HomeButton";
-            this.HomeButton.Size = new System.Drawing.Size(126, 46);
+            this.HomeButton.Size = new System.Drawing.Size(378, 75);
             this.HomeButton.TabIndex = 0;
             this.HomeButton.Text = "Home";
             this.HomeButton.UseVisualStyleBackColor = false;
@@ -139,9 +143,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(49, 167);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(396, 29);
+            this.label2.Size = new System.Drawing.Size(401, 29);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Welcome to the Log-a-Base System";
+            this.label2.Text = "Welcome to the Receipt Log System";
             // 
             // label3
             // 
@@ -151,9 +155,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(70, 196);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(171, 17);
+            this.label3.Size = new System.Drawing.Size(164, 17);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Here we LOG our Receipt";
+            this.label3.Text = "Please Login or Register";
             // 
             // button1
             // 
@@ -191,33 +195,6 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // ActiveUser
-            // 
-            this.ActiveUser.BackColor = System.Drawing.Color.Transparent;
-            this.ActiveUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ActiveUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ActiveUser.FlatAppearance.BorderSize = 0;
-            this.ActiveUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ActiveUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ActiveUser.ForeColor = System.Drawing.Color.Black;
-            this.ActiveUser.Location = new System.Drawing.Point(130, 411);
-            this.ActiveUser.Name = "ActiveUser";
-            this.ActiveUser.Size = new System.Drawing.Size(126, 46);
-            this.ActiveUser.TabIndex = 8;
-            this.ActiveUser.Text = "Active User";
-            this.ActiveUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ActiveUser.UseVisualStyleBackColor = false;
-            this.ActiveUser.Click += new System.EventHandler(this.ActiveUser_Click);
-            // 
-            // aboutScreen1
-            // 
-            this.aboutScreen1.BackColor = System.Drawing.Color.White;
-            this.aboutScreen1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.aboutScreen1.Location = new System.Drawing.Point(0, 130);
-            this.aboutScreen1.Name = "aboutScreen1";
-            this.aboutScreen1.Size = new System.Drawing.Size(1109, 555);
-            this.aboutScreen1.TabIndex = 11;
-            // 
             // registerScreen1
             // 
             this.registerScreen1.BackColor = System.Drawing.Color.White;
@@ -230,12 +207,34 @@
             // loginScreen1
             // 
             this.loginScreen1.BackColor = System.Drawing.Color.White;
-            this.loginScreen1.Enabled = false;
-            this.loginScreen1.Location = new System.Drawing.Point(0, 136);
+            this.loginScreen1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.loginScreen1.Location = new System.Drawing.Point(0, 0);
             this.loginScreen1.Name = "loginScreen1";
-            this.loginScreen1.Size = new System.Drawing.Size(1109, 551);
-            this.loginScreen1.TabIndex = 9;
-            this.loginScreen1.Load += new System.EventHandler(this.loginScreen1_Load);
+            this.loginScreen1.Size = new System.Drawing.Size(1109, 685);
+            this.loginScreen1.TabIndex = 12;
+            // 
+            // viewData1
+            // 
+            this.viewData1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.viewData1.Location = new System.Drawing.Point(0, 0);
+            this.viewData1.Name = "viewData1";
+            this.viewData1.Size = new System.Drawing.Size(1109, 685);
+            this.viewData1.TabIndex = 15;
+            // 
+            // aboutScreen1
+            // 
+            this.aboutScreen1.BackColor = System.Drawing.Color.White;
+            this.aboutScreen1.Location = new System.Drawing.Point(0, 130);
+            this.aboutScreen1.Name = "aboutScreen1";
+            this.aboutScreen1.Size = new System.Drawing.Size(1109, 555);
+            this.aboutScreen1.TabIndex = 11;
+            // 
+            // activerUser1
+            // 
+            this.activerUser1.Location = new System.Drawing.Point(0, 136);
+            this.activerUser1.Name = "activerUser1";
+            this.activerUser1.Size = new System.Drawing.Size(1125, 545);
+            this.activerUser1.TabIndex = 17;
             // 
             // Main
             // 
@@ -243,16 +242,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1109, 685);
-            this.Controls.Add(this.aboutScreen1);
-            this.Controls.Add(this.registerScreen1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.ActiveUser);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.registerScreen1);
             this.Controls.Add(this.loginScreen1);
+            this.Controls.Add(this.viewData1);
+            this.Controls.Add(this.aboutScreen1);
+            this.Controls.Add(this.activerUser1);
             this.Name = "Main";
             this.Text = "DataBase";
             this.panel1.ResumeLayout(false);
@@ -268,17 +268,18 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button AboutButton;
-        private System.Windows.Forms.Button SearchButton;
         private System.Windows.Forms.Button HomeButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button ActiveUser;
-        private LoginScreen loginScreen1;
         private registerScreen registerScreen1;
         private aboutScreen aboutScreen1;
+        private LoginScreen loginScreen1;
+        private System.Windows.Forms.Button btnSearch;
+        private ViewData viewData1;
+        private ActiverUser activerUser1;
     }
 }
 
